@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "621423053738",
+    "firebase_url": "https://voxtrail-216007.firebaseio.com",
+    "project_id": "voxtrail-216007",
+    "storage_bucket": "voxtrail-216007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621423053738:android:32ead5e0e6d4a6c5",
+        "android_client_info": {
+          "package_name": "com.voxtrail.voxtrail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621423053738-tchkm55ce5b5kgeb4b4ge115tu9rb052.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.voxtrail.voxtrail",
+            "certificate_hash": "d3be9b87d9089054bb7e3f71607e537d0e42ff9f"
+          }
+        },
+        {
+          "client_id": "621423053738-mf0f7rlppn87471ol8kv2vmnjbi5e2hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj3zvtyQ3qtlu6hAA88VRfRod3k-gXGiY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621423053738-mf0f7rlppn87471ol8kv2vmnjbi5e2hm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

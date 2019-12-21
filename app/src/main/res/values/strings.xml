@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Voxtrail</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <!--<string name="google_map_api_key">AIzaSyCppTSPwwngcij5g-ROfIwOJPYG7zpxmQM</string>-->
+    <string name="google_map_api_key">AIzaSyC-L6KkHvJLkqTASANbRZC3gvAQExPFx24</string>
+
+    <string-array name="move_speed">
+        <item>1x</item>
+        <item>2x</item>
+        <item>3x</item>
+        <item>4x</item>
+        <item>5x</item>
+    </string-array>
+
+    <string-array name="vehicle_status">
+        <item>All</item>
+        <item>Running</item>
+        <item>Stopped</item>
+        <item>Offline</item>
+    </string-array>
+
+    <string-array name="event_list">
+        <item>Overspeed</item>
+        <item>Zone in</item>
+        <item>Zone Out</item>
+        <item>Harsh Accleration</item>
+        <item>Harsh Braking</item>
+        <item>Harsh Cornering</item>
+        <item>Gps Yes</item>
+        <item>Gps No</item>
+        <item>Ignition ON</item>
+        <item>Ignition OFF</item>
+        <!--<item>Connection Yes</item>-->
+        <!--<item>Connection No</item>-->
+    </string-array>
+
+</resources>

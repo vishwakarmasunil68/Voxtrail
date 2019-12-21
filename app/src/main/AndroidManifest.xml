@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.voxtrail.voxtrail">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_round_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.SelectZoneActivity"></activity>
+        <activity android:name=".fragment.events.ZoneSelectActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="53a8583996580b389b3ef645558aef1df615b171" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="voxtrail"
+                    android:scheme="voxtrail" />
+                <data
+                    android:host="www.voxtrail.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GeoFenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddGeoFenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+
+
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <data -->
+            <!-- android:host="voxtrail" -->
+            <!-- android:scheme="voxtrail" /> -->
+            <!-- <data -->
+            <!-- android:host="www.voxtrail.com" -->
+            <!-- android:scheme="http" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.PlayBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeviceSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".testing.TestingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".testing.TestingActivity2" />
+        <activity android:name=".activity.DeepLinkingObjectList" />
+        <activity android:name=".testing.NewDashboardActivity" />
+        <activity android:name=".testing.GraphTestingActivity" />
+        <activity android:name=".fragment.events.SelectDeviceListActivity" />
+    </application>
+
+</manifest>
